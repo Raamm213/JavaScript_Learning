@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" type="image/x-icon" href="/path/to/favicon.ico">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="demochart.css">
+</head>
+<body class="body">
+    <div class="cont">
+        <h1 class="header">Chart Quantity</h1>
+        <button class="button" id="showingquantity">show Quantity</button>
+        <button class="button" id="add1">Add 1</button>
+        <button class="button" id="add2">Add 2</button>
+        <button class="button" id="add3">Add 3</button>
+        <button class="button" id="add4">Add 4</button>
+        <button class="button" id="add5">Add 5</button>
+        <button class="button" id="Reset">Reset Chart</button>
+    </div>
+
+    <div class="example">
+        <div class="color1" id="block1">0</div>
+        <div class="color2" id="block2">0</div>
+        <div class="color3" id="block3">0</div>
+        <div class="color4" id="block4">0</div>
+        <div class="color5" id="block5">0</div>
+    </div>
+    
+    <script>
+        document.getElementById("showingquantity").addEventListener("click",function(){
+            let color1 = document.querySelector(".color1");
+            var color2 = document.querySelector(".color2");
+            var color3 = document.querySelector(".color3");
+            var color4 = document.querySelector(".color4");
+            var color5 = document.querySelector(".color5");
+            var count1 = parseInt(color1.innerHTML, 10);
+            var count2 = parseInt(color2.innerHTML, 10);
+            var count3 = parseInt(color3.innerHTML, 10);
+            var count4 = parseInt(color4.innerHTML, 10);
+            var count5 = parseInt(color5.innerHTML, 10);
+            alert("Color 1: "+count1+"\nColor 2: "+count2+"\nColor 3: "+count3+"\nColor 4: "+count4+"\nColor 5: "+count5);
+        });
+
+        document.getElementById("Reset").addEventListener("click",function(){
+            var color1 = document.querySelector(".color1");
+            var color2 = document.querySelector(".color2");
+            var color3 = document.querySelector(".color3");
+            var color4 = document.querySelector(".color4");
+            var color5 = document.querySelector(".color5");
+            color1.innerHTML = 0;
+            color2.innerHTML = 0;  
+            color3.innerHTML = 0;
+            color4.innerHTML = 0;
+            color5.innerHTML = 0;
+            alert("Chart Reseted")
+        })
+        
+        document.getElementById("add1").addEventListener("click",function(){
+            var color1 = document.querySelector(".color1");
+            var count = parseInt(color1.innerHTML,10);
+            count++;
+            color1.innerHTML = count;
+        })
+
+        document.getElementById("add2").addEventListener("click",function(){
+            var color2 = document.querySelector(".color2");
+            var count2 = parseInt(color2.innerHTML,10);
+            count2++;
+            color2.innerHTML = count2;
+        })
+
+        document.getElementById("add3").addEventListener("click",function(){
+            var color3 = document.querySelector(".color3");
+            var count3 = parseInt(color3.innerHTML,10);
+            count3++;
+            color3.innerHTML = count3;
+        })
+
+        document.getElementById("add4").addEventListener("click",function(){
+            var color4 = document.querySelector(".color4");
+            var count4 = parseInt(color4.innerHTML,10);
+            count4++;
+            color4.innerHTML = count4;
+        })
+
+        document.getElementById("add5").addEventListener("click",function(){
+            var color5 = document.querySelector(".color5");
+            var count5 = parseInt(color5.innerHTML,10);
+            count5++;
+            color5.innerHTML = count5;
+        })
+
+        document.getElementById("block1").addEventListener("click",function(){
+            var color1 = document.querySelector(".color1");
+            var count = parseInt(color1.innerHTML,10);
+            count++;
+            color1.innerHTML = count;
+        })
+
+        document.getElementById("block2").addEventListener("click",function(){
+            var color2 = document.querySelector(".color2");
+            var count = parseInt(color2.innerHTML,10);
+            count++;
+            color2.innerHTML = count;
+        })
+
+        document.getElementById("block3").addEventListener("click",function(){
+            var color3 = document.querySelector(".color3");
+            var count3 = parseInt(color3.innerHTML,10);
+            count3++;
+            color3.innerHTML = count3;
+        })
+
+        document.getElementById("block4").addEventListener("click",function(){
+            var color4 = document.querySelector(".color4");
+            var count4 = parseInt(color4.innerHTML,10);
+            if (count4++ >= 10){
+                alert("You have reached the limit of 10")
+                return;
+            }
+            color4.innerHTML = count4;
+        })
+
+        document.getElementById("block5").addEventListener("click",function(){
+            var color5 = document.querySelector(".color5");
+            var count5 = parseInt(color5.innerHTML,10);
+            count5++;
+            color5.innerHTML = count5;
+        })
+    </script>
+</body>
+</html>
