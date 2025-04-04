@@ -1,2 +1,3 @@
 # JavaScript_Learning
-hi hello 
+this is a example of working out the git in vscode
+will get better !!!!!!! and yes!!!!!
