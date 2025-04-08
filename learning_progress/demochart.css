@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
   /* Root variables */
   :root {
     --primary-color: #3498db;
