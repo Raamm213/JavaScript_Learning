@@ -5,9 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="todo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
 </head>
 <body>
-
+    <div class="background">
+        <div class="header">
+            <h1 class="headerContent">ToDo Lists Application</h1>
+            <div class="headerInput">
+                <input class="input" type="text" id="todoInput" placeholder="Add a new task...">
+                <button class="btn" id="addButton">Add</button>
+                <button class="btnclear" id="clearButton">Clear</button>
+            </div>
+        </div>
+        <div class="mainContent">
+            <div class="tobedone">
+                <h2 class="tobedoneContent">To Be Done</h2>
+                <div class="centering">
+                    <ul id="todoList">
+                    </ul>
+                </div>
+            </div>
+            <div class="doneanddosted">
+                <h2 class="doneanddostedContent">Done and Dusted</h2>
+                <div class="centering">
+                    <ul id="doneList">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
 
     
     <script src="todo.js"></script>

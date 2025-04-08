@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Press Start 2P', cursive;
+    background-color: #f0f0f0;
+}
+.header{
+    text-align: center;
+    margin: 20px;
+}
+.headerContent{
+    margin: 20px 0;
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.input {
+    height: 10vh;
+    width: 40%;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #333;
+    border-radius: 15px;
+    text-align: center;
+    background-color: bisque;
+    font-weight: 900;
+}
+.btn{
+    height: 10vh;
+    border-radius: 15px;
+    width: 10%;
+    background-color: rgba(0, 0, 0, 0.687);
+    cursor: pointer;
+    color: white;
+    font-weight: 1000;
+    font-size: 1rem;
+}
+.btnclear{
+    height: 10vh;
+    border-radius: 15px;
+    width: 10%;
+    background-color: rgba(255, 0, 0, 0.687);
+    cursor: pointer;
+    color: white;
+    font-weight: 1000;
+    font-size: 1rem;
+}
+.btnclear:hover{
+    background-color: rgb(255, 110, 110);
+}
+.btn:hover{
+    background-color: rgb(86, 86, 255);
+    color: white;
+}
+.btn:active,.btnclear:active{
+    background-color: rgb(191, 191, 241);
+    color: black;
+}
+
+.mainContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    border: 6px solid black;
+    border-radius: 30px;
+    width: 80vw;
+    height: 70vh;
+    background-color: rgba(3, 3, 3, 0.253);
+}
+.tobedone{
+    width: 50%;
+    height: 100%;
+    border-right: 3px solid rgb(38, 38, 45);
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+.tobedoneContent{
+    margin: 0px auto;
+    font-size: 1.5rem;
+    padding: 20px;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+    text-align: center;
+    background-color: rgb(180, 180, 180);
+}
+
+.doneanddosted{
+    width: 50%;
+    height: 100%;
+    border-left: 3px solid rgb(38, 38, 45);
+    padding: 10px; 
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: auto;
+}
+
+.doneanddostedContent{
+    font-size: 1.5rem;
+    padding: 20px;
+    position: sticky;
+    z-index: 1;
+    margin: 0px auto;
+    top: 0;
+    text-align: center;
+    background-color: rgba(180, 180, 180, 1); /* light grey with transparency */
+}
+
+.centering{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.todoele{
+    display: block;
+    padding: 5px 10px;
+    margin: 10px;
+    cursor: pointer; 
+}
+.todoele:hover{
+    background-color: rgb(86, 86, 255);
+    color: white;
+}
+.todoele:active{
+    background-color: rgb(191, 191, 241);
+    color: black;
+}
+
+.tobedone::-webkit-scrollbar, .doneanddosted::-webkit-scrollbar {
+    width: 6px;
+}
+  
+.tobedone::-webkit-scrollbar-track, .doneanddosted::-webkit-scrollbar-track {
+    background: transparent;
+}
+  
+.tobedone::-webkit-scrollbar-thumb, .doneanddosted::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+#todoInput::placeholder {
+    opacity: 0.6;
+    transition: opacity 0.3s;
+}
+#todoInput:focus::placeholder {
+    opacity: 0.3;
+}
+
