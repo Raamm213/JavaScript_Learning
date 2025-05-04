@@ -120,8 +120,8 @@ body {
   border: 2px solid black;
   border-radius: 25px;
   z-index: 2;
-  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.6), 0 0 10px rgba(255, 255, 255, 0.05);
-
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.6),
+    0 0 10px rgba(255, 255, 255, 0.05);
 }
 .form {
   height: 100%;
@@ -129,6 +129,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 20px; /* Adds spacing between input and button */
 }
 .inputarea {
@@ -238,7 +239,7 @@ body {
 .at-water-bold,
 .at-thermometer-alert-bold,
 .at-eye-plus-bold,
-.at-strong-wind-bold{
+.at-strong-wind-bold {
   font-size: 30px;
 }
 
@@ -253,7 +254,7 @@ body {
   gap: 15px;
 }
 .daily10,
-.daily11{
+.daily11 {
   height: 90%;
   width: 45%;
   background-color: var(--Container-background);
@@ -266,7 +267,7 @@ body {
 .sunrise,
 .sunset,
 .currentTime,
-.windSpeed   {
+.windSpeed {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,7 +333,41 @@ body {
   align-items: center;
   margin: 10px;
 }
-.currentTime span{
+.currentTime span {
   letter-spacing: 3px;
   color: aqua;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .mainCont {
+    flex-direction: column;
+  }
+
+  .hub1 {
+    width: 90%;
+    height: auto;
+  }
+
+  .sub3Cont {
+    width: 90%;
+  }
+
+  .searchCont {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerCont {
+    padding: 15px;
+  }
+
+  .inputarea {
+    width: 70%;
+  }
+
+  .submitbtn {
+    width: 25%;
+  }
 }
